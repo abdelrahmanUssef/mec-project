@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(4 , auto ) ;
+            grid-template-rows: auto;
+            background-color: brown;
+  place-items: center;
+            gap: 1rem;
+            height: 100vh;
+        }
+        .child{
+            background-color: cornsilk;
+            border: 1px solid black;
+            font-size: 32px;
+            padding: 2rem;
+        }
+        .child:first-child{
+            grid-column: 2 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+</body>
+</html>
